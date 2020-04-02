@@ -1,13 +1,29 @@
 .navbar {
+    display: flex;
+    justify-content: space-around;
     background-color: rgba(57, 136, 77, 0.747);
-    text-align: center;
-    margin: 50px;
-    padding: 10px;
-    list-style-type: none;
-    text-decoration: none;
 }
 
-.navbar p {
-    margin: 80px;
-    display: inline;
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+h1,
+.content>p {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    flex-basis: 200%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 33%;
 }
